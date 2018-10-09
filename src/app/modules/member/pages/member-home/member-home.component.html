@@ -1,0 +1,21 @@
+<div style="text-align:center">
+  <h1>
+    Top Destination
+  </h1>
+	<div *ngFor="let singledest of destination">
+	<img src="https://www.befreetour.com/img/location_pic/{{singledest.pic_lokasi}}" height="auto" width="250">
+		<h5>{{singledest.nama_lokasi_id}}</h5>
+		<br><br>
+	</div>
+</div>
+
+<div style="text-align:center">
+  <h1>
+    Top Activity
+  </h1>
+	<div *ngFor="let singleproduk of produk">
+	<img src="https://www.befreetour.com/img/produk/{{singleproduk.slug_judul}}/{{singleproduk.pic_produk}}" height="auto" width="250">
+		<h5>{{singleproduk.produk_nama_id}}</h5>
+		<br><br>
+	</div>
+</div>

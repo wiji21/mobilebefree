@@ -1,0 +1,39 @@
+import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../../../../product.service';
+
+@Component({
+  selector: 'app-member-home',
+  templateUrl: './member-home.component.html',
+  styleUrls: ['./member-home.component.css']
+})
+export class MemberHomeComponent implements OnInit {
+	
+	dest: any;
+	product: any;
+	
+  constructor(private productservis: ProductService) { }
+
+  ngOnInit() {
+	   this.getTop();
+	   this.getAct();
+  }
+
+  getTop()
+  {
+	  this.productservis.getTopDest()
+		.subscribe(dest => {
+			this.destination=dest['data']['data'];
+			console.log(this.destination);
+		});
+  }
+  
+  getAct()
+  {
+	  this.productservis.getActivity()
+		.subscribe(product => {
+			this.produk=product['data']['data'];
+			console.log(this.produk);
+		});
+  }
+  
+}
