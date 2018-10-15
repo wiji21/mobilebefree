@@ -8,19 +8,30 @@ import { ProductService } from '../../../../product.service';
 })
 export class MemberHomeComponent implements OnInit {
 	
-	dest: any;
-	product: any;
+	banner: any;
+	destination: any;
+	produk: any;
 	
   constructor(private productservis: ProductService) { }
 
   ngOnInit() {
+	   this.getBanner();
 	   this.getTop();
 	   this.getAct();
   }
 
+  getBanner()
+  {
+	 this.productservis.getBanner()
+		.subscribe(banner => {
+			this.banner=banner['data']['data'];
+			console.log(this.banner);
+		});
+  }
+  
   getTop()
   {
-	  this.productservis.getTopDest()
+		this.productservis.getTopDest()
 		.subscribe(dest => {
 			this.destination=dest['data']['data'];
 			console.log(this.destination);

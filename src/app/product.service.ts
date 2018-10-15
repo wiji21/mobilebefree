@@ -12,6 +12,23 @@ export class ProductService {
 
 	constructor( private http:HttpClient ) { }
 	
+	getBanner()
+	  {	
+		const url=`${this.apiurl}/id/banner-home`;
+		return this.http.get<any>(url)
+			.pipe(
+				tap(banner =>
+				{	
+					console.log(banner);
+					return banner;
+				})
+				,
+				catchError(error => {
+						console.log(error);
+				})
+			)
+	  }
+	
 	getTopDest()
 	  {	
 		const url=`${this.apiurl}/id/topdest`;

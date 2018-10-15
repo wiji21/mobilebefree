@@ -1,0 +1,79 @@
+div[howto-step].align-left {
+    padding-left: 88px;
+    position: relative;
+	text-align: left;
+}
+div[howto-step]:before {
+    content: attr(howto-step);
+    position: absolute;
+    background: #e04f67;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 39px;
+    left: 24px;
+}
+h3.title-step {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+p.txt-step {
+    font-size: 15px;
+    line-height: 20px;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+.desc-image {
+    height: 70%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 60px;
+	box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+@media (max-width: 767px){
+	.desc-image {
+		height: 70%;
+		width: 70%;
+		margin-left: 25%;
+		margin-bottom: 60px;
+	}
+}
+.align-center-note {
+    line-height: 1.8;
+    font-size: 17px;
+    padding-bottom: 20px;
+	text-align: center;
+	font-family: "Open Sans";
+}
+
+.btn-contact-us a {
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none !important;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px 16px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 5px;
+    transition: all .1s ease-out;
+    border-width: 0;
+    letter-spacing: .3px;
+    color: #ffffff !important;
+    background: #e04f67;
+}
+.btn-contact-us a:hover {
+	color: #ffffff !important;
+    background: #f16d83;
+}

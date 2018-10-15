@@ -4,11 +4,582 @@
   <meta charset="utf-8">
   <title>Befreetour</title>
   <base href="/">
-
+	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <!-- Favicons-->
+    <link rel="icon" type="image/x-icon" href="assets/bismillah/img/favicon.ico" />
+    <link rel="apple-touch-icon" type="image/x-icon" href="assets/bismillah/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="assets/bismillah/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="assets/bismillah/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="assets/bismillah/img/apple-icon-144x144.png">
+
+   <!-- BASE CSS -->
+    <link href="assets/bismillah/css/base.css" rel="stylesheet">
+    <link href="assets/bismillah/css/befreetourindex.css" rel="stylesheet">
+    <link href="assets/bismillah/css/stylebismillah.css" rel="stylesheet">
+	<link href="assets/bismillah/css/bft_htl.css" rel="stylesheet">
+    <link href="assets/bismillah/css/floating.css" rel="stylesheet">
+	<link href="assets/bismillah/css/slick.css" rel="stylesheet">
+	<link type='text/javascript' href="assets/bismillah/css/owl.carousel.min.css" rel="stylesheet">
+	<link href="assets/bismillah/css/part_of.css" rel="stylesheet">
+
+	<!--Panggil Font Awesome -->
+    <link rel="stylesheet" href="assets/bismillah/fonts/font-awesome/css/font-awesome.min.css">
+
+	 <!--======= Responsive Bootstrap Carousel StyleSheet =========-->
+    <link href="assets/bismillah/slider-product/css/responsive_bootstrap_carousel_mega_min.css" rel="stylesheet" media="all">
+    <link href="assets/bismillah/slider-product/css/theme.css" rel="stylesheet" media="all">
+
+
+    <!-- REVOLUTION SLIDER CSS -->
+    <link href="assets/bismillah/rs-plugin/css/settings.css" rel="stylesheet">
+    <link href="assets/bismillah/css/extralayers.css" rel="stylesheet">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" >
+
+	<link href="assets/bismillah/css/flag-icon.css" rel="stylesheet">
+    <script type="text/javascript" src="https://wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+        if(!wcs_add) var wcs_add = {};
+        wcs_add["wa"] = "182fde09506932";
+        wcs_do();
+    </script>
+	
+	<script type="text/javascript" src="https://adimg.daumcdn.net/rt/roosevelt.js" async></script>
+	
+	
+	
 </head>
+
+<script src="assets/bismillah/js/jquery.min.js"></script>
+<script type='text/javascript' src="assets/bismillah/js/owl.carousel.min.js"></script>
+<script src="assets/bismillah/js/befree.carousel.js"></script>
+
+<!-- Common scripts -->
+<script src="assets/bismillah/slider/js/jssor.slider.mini.js"></script>
+<script src="assets/bismillah/js/jquery-1.11.2.min.js"></script>
+<script src="assets/bismillah/js/common_scripts_min.js"></script>
+<script src="assets/bismillah/js/functions.js"></script>
+<script src="assets/bismillah/js/bootstrap.js"></script>
+
+<!--======= JavaScript slider products =========-->
+
+<!--======= jQuery =========-->
+<script src="assets/bismillah/slider-product/js/jquery-1.12.4.min.js"></script>
+
+<!--======= Bootstrap =========-->
+<script src="assets/bismillah/slider-product/js/bootstrap.min.js"></script>
+
+<!--======= Touch Swipe =========-->
+<script src="assets/bismillah/slider-product/js/jquery.touchSwipe.min.js"></script>
+
+<!--======= Customize =========-->
+<script src="assets/bismillah/slider-product/js/responsive_bootstrap_carousel.js"></script>
+<!--============== END JavaScript slider products ================-->
+
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+
+<script src="assets/bismillah/js/modernizr.js"></script>
+<script src="assets/bismillah/js/video_header.js"></script>
+<script src="assets/bismillah/js/icheck.js"></script>
+
+<script src="assets/bismillah/js/lang.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/bismillah/js/id/funcindex.js"></script>
+
+
+<script src="assets/bismillah/js/slick.js" type="text/javascript" charset="utf-8"></script>
+
 <body>
+
+	<style>
+
+	.wrapper-home {
+		height: 350px;
+		background-image: url(https://www.befreetour.com/img/befree-home.jpg);
+		background-position: 50% 50%;
+		background-size: cover;
+	}
+
+	.title-home {
+		position: relative;
+		width: 100%;
+		padding-top: 50px;
+	}
+
+	.title-home h1 {
+		font-size: 3vw;
+		font-weight: 700;
+		color: rgba(0, 0, 0, 0.5);
+		width: auto;
+		display: inline-block;
+		padding: 10px;
+	}
+
+	.home-search-bar {
+		position: relative;
+		width: 100%;
+		display: inline-block;
+		max-width: 450px;
+	}
+	.home-nav-searchfield {
+		background: #fff;
+		color: #555;
+		display: block;
+		font-size: inherit;
+		padding: 10px;
+		font-family: inherit;
+		height: 48px;
+		font-weight: 500;
+		border-radius: 8px;
+		width: 100%;
+		box-shadow: 0px 5px 15px -8px rgba(0, 0, 0, 0.5);
+	}
+
+	.home-search-box {
+		width: 100%;
+		height: 100%;
+		padding: 5px 25px 5px 5px;
+		border: none;
+		display: block;
+	}
+
+	input.home-search-box:focus {
+		border-bottom: 2px solid rgba(224, 79, 103, 0.4);
+		outline: 0;
+	}
+
+	.main_title h2 {
+		font-size: 26px;
+		text-transform: none;
+		font-weight: 600;
+	}
+
+	.main_title p {
+		font-family: inherit;
+		font-weight: inherit;
+		font-size: inherit;
+	}
+
+	div#promo {
+		padding: 0;
+	}
+
+	.befree-promo .slick-slide {
+		margin: 0 !important;
+	}
+
+	.promo {
+		height: 280px;
+		width: 100%;
+		background-position: 50% 85% !important;
+	}
+
+
+	@media only screen and (max-width:480px) {
+		.wrapper-home {height: 275px;}
+		.title-home h1 {font-size: 6vw;}
+		.main_title h2 {font-size: 22px;}
+		.promo {height: 225px; background-size: cover !important;}
+	}
+
+	@media only screen and (max-width:768px) {
+		.wrapper-home {display: none;}
+		div#promo {margin: 0}
+		.title-home h1 {font-size: 5vw;}
+		.promo {background-size: cover !important;}
+	}
+
+	@media only screen and (max-width:992px) {
+		.promo {background-size: cover !important;}
+	}
+
+	.slick-next {
+		right: -25px;
+	}
+
+	.slick-prev {
+		left: -25px;
+	}
+
+	.slick-next:before {
+		content: '\e89b';
+	}
+
+	.slick-prev:before {
+		content: '\e89a';
+	}
+
+	.slick-prev:before, .slick-next:before {
+		font-family: 'fontello';
+		font-size: 40px;
+		line-height: 1;
+		opacity: .75;
+		color: #999;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	.slick-prev, .slick-next {
+		font-size: 0;
+		line-height: 0;
+		position: absolute;
+		top: 50%;
+		display: block;
+		width: 25px;
+		height: 100%;
+		padding: 0;
+		-webkit-transform: translate(0, -50%);
+		-ms-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+		cursor: pointer;
+		color: transparent;
+		border: none;
+		outline: none;
+		background: transparent;
+		z-index: 2;
+	}
+
+	.city-container {
+		width: 225px;
+		height: 225px;
+		overflow: hidden;
+		position: relative;
+		float: left;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	@media only screen and (max-width:480px) {
+		.city-container {
+			width: 145px;
+		}
+
+		div#topDest.container {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+	}
+
+	.city-box {
+		height: 100%;
+		width: 100%;
+		background-position: 50% 50%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		-webkit-transition: all .5s;
+		-moz-transition: all .5s;
+		-o-transition: all .5s;
+		transition: all .5s;
+	}
+
+	.city-container a {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		text-align: center;
+		padding-top: 100px;
+		z-index: 1;
+		background: rgba(17, 17, 17, 0.1);
+	}
+
+	.city-container a > h3 {
+		color: #fff;
+		font-weight: 600;
+		text-shadow: 0px 3px 5px rgba(17, 17, 17, 0.5);
+		text-transform: uppercase;
+	}
+
+	.city-container:hover .city-box, .city-container:focus .city-box {
+		-ms-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-o-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+
+	.city-container:hover .city-box:before, .city-container:focus .city-box:before {
+		display: block;
+	}
+
+	.city-box:before {
+		content: "";
+		display: none;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 );
+	}
+
+	.top-destination .slick-slide {
+		margin: 5px !important;
+	}
+
+	.slick-slide {
+		font-family: inherit !important;
+	}
+
+	i.icon-star.empty:before {
+		color: #ccc;
+		margin: 1px;
+	}
+
+	i.icon-star.voted:before {
+		margin: 1px;
+	}
+
+	.act_container:hover {
+		box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+		transition: 0.5s;
+	}
+
+	</style>
+
   <app-root></app-root>
+  
+	<style>
+
+	.act_container .act_title h3 {
+		text-transform: capitalize;
+		letter-spacing: 0px;
+		font-size: inherit;
+		font-weight: 500;
+		height: 18px;
+	}
+
+	.act_container {
+		background-color: #fff;
+		-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+		-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+		margin: 0;
+		margin-bottom: 20px;
+		border-radius: 4px;
+	}
+
+	.act_img_container {
+		position: relative;
+		height: 175px;
+		background-size: cover !important;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+	}
+
+	.act_container .act_title {
+		padding: 10px;
+		position: relative;
+		min-height: 100px;
+	}
+
+	.act_container .act_title h3 {
+		margin-bottom: 3px;
+		margin-top: 0;
+		font-size: 15px;
+		text-transform: capitalize;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		letter-spacing: -0.5px;
+	}
+
+	.act_badge {
+		position: absolute;
+		display: table;
+		top: 4px;
+		right: 4px;
+		width: 50px;
+		height: 50px;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+		background: rgba(224, 79, 103, 0.75);
+		font-size: 11px;
+		line-height: 12px;
+		padding-top: 13px;
+		border-radius: 50%;
+	}
+
+	.act_badge strong {
+		display: block;
+		font-size: 14px;
+	}
+
+	.act_badge strong {
+		display: block
+	}
+
+	.act_ribbon {
+		position: absolute;
+		display: table;
+		top: 7px;
+		left: 0px;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+		background: #e04f67;
+		font-size: 11px;
+		line-height: 12px;
+		padding: 5px;
+		font-weight: 700;
+	}
+
+	.instant_book {
+		color: #FF5722;
+		background: #fff;
+		position: absolute;
+		padding: 2px 6px 2px 1px;
+		font-weight: 500;
+		border-top-right-radius: 5px;
+		letter-spacing: -0.5px;
+		top: -20px;
+		left: 0;
+		font-size: 11px;
+	}
+
+	.price_container {
+		text-align: right;
+		color: #555;
+	}
+
+	.act_price {
+		font-weight: 700;
+		font-size: 16px;
+		display: inline-block;
+	}
+
+	.act_del_price {
+		color: #888;
+		display: inline-block;
+	}
+
+	.img-hover:hover img {
+		transform: scale(1.25);
+		transition: all 0.3s ease 0s;
+	}
+
+	@media only screen and (max-width:480px) {
+		.act_container .act_title h3 {font-size: 14px;}
+	}
+
+	span.act_booked {
+		display: block;
+		font-size: 12px;
+		font-weight: 500;
+		color: #4CAF50;
+	}
+
+	.padd_5 {
+		padding: 0 5px !important;
+	}
+
+	/* =============== Article Split List ===================== */
+
+	ul.split-list {
+		padding: 10px;
+	}
+
+	.split-list ul{
+	  float: left;
+	  margin: 0px;
+	  list-style-type: none;
+	  padding-left: 10px;
+	  width: 25%;
+	}
+
+	@media only screen and (max-width:480px) {
+	  .split-list ul {
+		  width: 100% !important;
+	  }
+	}
+
+	@media only screen and (max-width:768px) {
+	  .split-list ul {
+		  width: 50%;
+	  }
+	}
+
+	.split-list li{
+	  line-height: inherit;
+	  font-size: inherit;
+	  font-weight: 500;
+	  margin-bottom: 10px;
+	 }
+
+	 .split-list li>a{
+	   color: #777777;
+	  }
+
+	  .split-list li>a:hover{
+		color: #e04f67;
+	   }
+
+	/* =============== image guide link ===================== */
+
+	.guide_container {
+		display: inline;
+		position: relative;
+		float: right;
+		top: -55px;
+	}
+	.profile-img-guide {
+		border: 2px solid #e9ecef;
+		height: 40px;
+		width: 40px;
+	}
+	.circle-img {
+		border-radius: 50%;
+	}
+	/* ========== Hover tooltips =============== */
+		@media only screen and (max-width:767px) {
+			.guide_container .tip-content {
+				display: none;
+			}
+		}
+		.guide_container .tip-content {
+			position: absolute;
+			z-index: 999;
+			bottom: 50px;
+			bottom: 50px;
+			left: -23px;
+			width: auto;
+			text-align: center;
+			padding: 5px 10px;
+			border-radius: 4px;
+			color: #fff;
+			background: #333;
+			-webkit-box-shadow: 2px 2px 5px #696969a8;
+			-moz-box-shadow: 2px 2px 5px #696969a8;
+			box-shadow: 2px 2px 5px #696969a8;
+			opacity: 0;
+			-webkit-transition: opacity 250ms ease-out;
+			-moz-transition: opacity 250ms ease-out;
+			-ms-transition: opacity 250ms ease-out;
+			-o-transition: opacity 250ms ease-out;
+			transition: opacity 250ms ease-out;
+		}
+
+		.guide_container .tip-content:before {
+			content:' '; /* Must have content to display */
+			position: absolute;
+			bottom: -15px;
+			left: 36px;
+			width: 0;
+			height: 0;
+			margin-top: -8px;
+			border: 8px solid transparent;
+			border-right-color: #333;
+			transform: rotateZ(-90deg);
+		}
+
+		.guide_container:hover .tip-content {
+			 opacity:1;
+		}
+	</style>
 </body>
 </html>

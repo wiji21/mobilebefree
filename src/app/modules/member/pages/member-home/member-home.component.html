@@ -1,21 +1,61 @@
-<div style="text-align:center">
-  <h1>
-    Top Destination
-  </h1>
-	<div *ngFor="let singledest of destination">
-	<img src="https://www.befreetour.com/img/location_pic/{{singledest.pic_lokasi}}" height="auto" width="250">
-		<h5>{{singledest.nama_lokasi_id}}</h5>
-		<br><br>
+<div class="wrapper-home">
+	<div class="title-home">
+		<div class="container">
+			<h1>Pesan wisata menarik<br>Dengan harga terbaik!</h1>
+			<form  method="get" action="">
+				<div class="home-search-bar">
+                    <div class="home-nav-searchfield">
+                        <input class="home-search-box" type="text" autocomplete="off" name="keyword" placeholder="Ketik nama aktivitas, tiket masuk wisata atau tur disini" onkeyup="search(this.value)">
+                        <input type="hidden" autocomplete="off" name="lang" value="id">
+                    </div>
+                    <div class="nav-submit-button">
+                        <input type="button" title="Cerca" class="nav-submit-input" value="Search">
+                    </div>
+                    <div class="populer_list" id="result-key" style="display: none;background-color: #fff;border-radius: 15px;text-align: left;padding: 10px;"></div>
+                </div>
+			</form>
+		</div>
 	</div>
 </div>
 
-<div style="text-align:center">
-  <h1>
-    Top Activity
-  </h1>
-	<div *ngFor="let singleproduk of produk">
-	<img src="https://www.befreetour.com/img/produk/{{singleproduk.slug_judul}}/{{singleproduk.pic_produk}}" height="auto" width="250">
-		<h5>{{singleproduk.produk_nama_id}}</h5>
-		<br><br>
+<div class="container margin_30" id="promo">
+	<div class="befree-promo">
+		<div *ngFor="let banner of banner">
+			<div class="item">
+					<img class="promo" src="https://www.befreetour.com/img/slider/{{banner.image}}"></div>
+			</div>
+		</div>
+		
+	</div>
+
+<div class="container margin_30" id="topDest">
+	<div class="main_title">
+        <h2>Top <span>Destinations</span> </h2>
+        <p>Temukan berbagai aktivitas dan rekreasi menarik di berbagai destinasi populer.</p>
+    </div>
+	<div class="top-destination">
+      	<div *ngFor="let singledest of destination">
+		<div class="city-container" onclick="">
+			<img class="city-box" src="https://www.befreetour.com/img/location_pic/{{singledest.pic_lokasi}}">
+			<h3>{{singledest.nama_lokasi_id}}</h3>
+		</div>
+	</div>
+	</div>
+</div>
+
+<div class="container margin_30">
+	<div class="main_title">
+        <h2>Top <span>Activities</span> </h2>
+        <p>Ratusan pilihan wisata dan rekreasi dengan harga eksklusif.</p>
+    </div>
+  
+	<div class="top-destination">
+     <div *ngFor="let singleproduk of produk">
+		<div class="city-container" onclick="">
+			<img class="city-box" src="https://www.befreetour.com/img/produk/{{singleproduk.produk['slug_judul']}}/{{singleproduk.produk['pic_produk']}}">
+			<a href="#">
+			<h3>{{singleproduk.produk_nama_id}}</h3></a>
+		</div>
+	</div>
 	</div>
 </div>

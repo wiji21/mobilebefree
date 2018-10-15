@@ -1,0 +1,232 @@
+h2.comment-header {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Open Sans";
+	margin: 0;
+}
+.product-review {
+    float: left;
+    width: 100%;
+    margin: 15px 0 15px 0;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+}
+.product-review-head {
+    padding: 18px;
+    background-color: #f1f1f1;
+}
+.prod-summary-review {
+    margin: 0 15px;
+}
+h3 span.icon-star-empty {
+    font-size: 20px;
+}
+.mg-t15 {
+    margin-top: 15px;
+}
+.star-summary-wrapper {
+    padding: 20px;
+    border-left: 1px solid #e0e0e0;
+    display: block;
+}
+.table {
+    border-bottom: transparent;
+}
+.table > tbody > tr > td.rate-br0 {
+    border-top: transparent;
+	padding: 5px 0;
+}
+tr.grade-review {
+    cursor: pointer;
+}
+.star-wrap {
+    display: inline-flex;
+}
+table#rating-review-table {
+    margin-bottom: 0;
+}
+td.rate-br0 {
+    display: inline-flex;
+}
+.table > tbody > tr >td.rate-bar-row {
+    display: table-cell;
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    border-top: 0;
+}
+.rating-bar-container {
+    position: relative;
+    background: #d1d2d4;
+    height: 4px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 1;
+    top: 5px;
+}
+.rating-bar-value {
+    background: #fec112;
+    position: absolute;
+    height: 4px;
+    text-align: center;
+    -webkit-animation: move 2s;
+    -moz-animation: move 2s;
+    -o-animation: move 2s;
+    animation: move 2s;
+    border-radius: 10px;
+    z-index: 2;
+}
+.table > tbody > tr >td.count-rate {
+	border-top: 0;
+	padding-top: 5px;
+}
+.rating-count{
+/* 	width: 50px;
+    padding: 2px 0; */
+	color: #333;
+}
+.rating-count:hover{
+	color: #e04f67;
+}
+.text-right {
+    text-align: right!important;
+}
+
+  @media screen and (max-width: 1024px) {
+	  .star-summary-wrapper {
+			border-left: 0!important;
+		}
+  }
+  
+.row-customer {
+    display: -webkit-inline-box;
+	    padding: 1rem 0 0 1rem;
+}
+@media screen and (max-width: 767px) {
+  .row-customer {
+    display: block;
+  }	
+}
+  
+.list-table-cell {
+    display: block;
+}
+.list-box-product {
+    float: left;
+    margin: 10px 10px 10px 14px;
+    width: 118px;
+}
+.mr-5 {
+    margin-right: 5px!important;
+}
+a:-webkit-any-link {
+    text-decoration: none!important;
+}
+img.list-box-image {
+    border: 1px solid #e0e0e0;
+    padding: 8px;
+    background: #fff;
+    max-width: 115px;
+    width: 113px;
+}
+.list-box-top {
+    margin-top: 3px;
+    margin-left: 2px;
+    margin-bottom: 5px;
+    float: left;
+    word-wrap: break-word;
+    width: 110px;
+}
+.list-box-top a span {
+	color: #555;
+    font-weight: 700;
+}
+.list-box-top a span:hover {
+    color: #e04f67;
+} 
+
+a#open-review-box {
+    padding: 10px 15px;
+    border: 0;
+    margin: 15px 15px 0 0;
+}
+
+div#detail_guide_box {
+    background: #FFF;
+    /* box-shadow: 0px 1px 13px #11111133; */
+    border-radius: 3px;
+    padding: 15px 25px;
+    border: 1px solid #e0e0e0;
+}
+.rating-guide h3 {
+    margin: 0;
+    text-align: center;
+}
+.rating-guide h2 {
+	font-size:12px;
+    margin: 8px 0;
+    text-align: center;
+}
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 4px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #f3403a;
+    border-radius: 50%;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 2px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 0;
+}
+hr#line {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+.rate-review {
+    display: inline-flex;
+}
+.seller-fdb {
+    background: #e04f67;
+    padding: 0px 10px;
+    height: 20px;
+	border-radius: 3px;
+    color: #fff;
+    display: inline-flex;
+}
+
+.btn-reply {
+    color: #fff;
+    background: #e91f63; /* Old browsers */
+	background: -moz-linear-gradient(left, #e91f63 0%, #f34236 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #e91f63 0%,#f34236 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #e91f63 0%,#f34236 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    width: 100px!important;
+	margin-right: 10px;
+}
+.btn-reply:hover {
+    color: #fff!important;
+}
+.btn-reply-cancel {
+	color: #333;
+    background-color: #ccc;
+    width: 100px!important;
+}
+.btn-reply-cancel:hover {
+	color: #333;
+    background-color: #ccc;
+    width: 100px!important;
+}

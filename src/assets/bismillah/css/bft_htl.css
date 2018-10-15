@@ -1,0 +1,93 @@
+.custom-tabs {
+	display: block;
+}
+
+.content-1,
+.content-2,
+.content-3 {	
+	display: none;
+	margin-top: -5px;
+	border-top: 1px solid #ddd;
+	z-index: 100;
+    opacity: 1;
+    transition: all ease-out 0.2s 0.1s;
+}
+
+.content-1 p,
+.content-2 p,
+.content-3 p {
+	padding: 10px 0 0;
+    margin: 0;
+}
+
+.custom-tabs .tab-wrap {	
+	padding: 7px 0px 9px 0px;
+}
+
+
+.custom-tabs .tab-wrap .tab-head {
+	vertical-align: middle;
+	cursor: pointer;
+	display: none;	
+}
+
+.custom-tabs .tab-wrap .tab-head:checked + .tab-label {
+	border-bottom: 3px solid #e04f67;
+}
+
+.custom-tabs .tab-wrap #tab1:checked ~ .content-1,
+.custom-tabs .tab-wrap #tab2:checked ~ .content-2,
+.custom-tabs .tab-wrap #tab3:checked ~ .content-3 {
+	display: block;
+	z-index: 100;
+    opacity: 1;
+    transition: all ease-out 0.2s 0.1s;
+}
+
+.custom-tabs .tab-wrap .tab-label {
+	vertical-align: middle;
+	cursor: pointer;
+	padding: 15px 25px;
+	text-align: center;
+	font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+	.custom-tabs .tab-wrap .tab-label {
+		    padding: 12px 5px;
+	}
+}
+
+._L1n9 {
+    display: grid;
+    font-size: 13px;
+    letter-spacing: .4px;
+    line-height: 28px;
+    cursor: pointer;
+    margin-top: 9px;
+}
+._L1n9 a {
+	color: #555;
+}
+._L1n9 a:hover {
+	color: #555;
+    text-decoration: underline;
+}
+h2.tT_pop {
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+	 padding-left: 15px;
+}
+
+/* ============================================================== */
+.bg-white {
+    background-color: #fff;
+}
+.space-small {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
